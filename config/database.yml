@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: chat_production
+  username: chat
+  password: <%= ENV['CHAT_DATABASE_PASSWORD'] %>
